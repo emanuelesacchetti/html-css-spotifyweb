@@ -52,6 +52,12 @@ html {
 .debug footer div {
     background-color: brown;
 }
+.debug .sidebar-top, .debug .sidebar-bottom {
+    background-color: red;
+}
+.debug .sidebar-icons, .debug .sidebar-playlist {
+    background-color: orange;
+}
 
 
 
@@ -113,6 +119,31 @@ section ul li {
 }
 
 
+
+/*sidebar*/
+.sidebar {
+    flex-direction: column;
+    padding: 0.2rem;
+}
+.sidebar-top {
+    width: 100%;
+}
+.sidebar-bottom {
+    width: 100%;
+}
+.sidebar-playlist {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    display: none;
+}
+.logo {
+    padding: 1rem 0;
+}
+.sidebar .text {
+    display: none;
+}
+
+
 /*footer*/
 footer {
     height: 100px;
@@ -150,6 +181,12 @@ footer {
         width: calc(100% - 200px);
         left: 200px;
     }
+    .sidebar-playlist {
+        display: inline-block;
+    }
+    .sidebar .text {
+        display: inline-block;
+    }
 }
 
 
@@ -171,6 +208,9 @@ footer {
     }
     .f-item-sx, .f-item-dx {
         width: 20%;
+    }
+    .sidebar {
+        padding: 1rem 1rem 0.2rem;
     }
 }
 
