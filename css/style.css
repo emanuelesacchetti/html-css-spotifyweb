@@ -36,7 +36,6 @@ html {
 
 
 
-
 /*DEBUG*/
 .debug .main-nav {
     border: 1px solid white;
@@ -52,10 +51,8 @@ html {
 .debug footer div {
     background-color: brown;
 }
-.debug .sidebar-top, .debug .sidebar-bottom {
-    background-color: red;
-}
-.debug .sidebar-icons, .debug .sidebar-playlist {
+
+.debug .sidebar-playlist {
     background-color: orange;
 }
 
@@ -141,7 +138,60 @@ section ul li {
 }
 .sidebar .text {
     display: none;
+    height: 100%;
+    
 }
+.sidebar .icon-logo-2 {
+    display: none;
+}
+.sidebar-icons img {
+    width: 80%;
+}
+.sidebar .icon {
+    height: 10px;
+}
+.sidebar-bottom .icon {
+    height: 100%;
+}
+
+.download {
+    height: 50px;
+    padding: 5px;
+}
+.download .text {
+    line-height: 40px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+#download {
+    height: 30px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.profile {
+    height: 50px;
+    padding: 5px;
+}
+.profile .text {
+    line-height: 40px;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-weight: bold;
+}
+#profile {
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.sidebar hr {
+    margin: 10px 0;
+}
+
+
 
 
 /*footer*/
@@ -187,6 +237,27 @@ footer {
     .sidebar .text {
         display: inline-block;
     }
+    .sidebar .icon-logo-2 {
+        display: inline-block;
+    }
+    .sidebar .logo .icon-logo {
+        display: none;
+    }
+    .sidebar {
+        padding: 1rem 1rem 0.2rem;
+    }
+    .sidebar .t-center {
+        text-align: left;
+    }
+    .sidebar img {
+        width: 15%;
+    }
+    .sidebar .logo img {
+        width: 80%;
+    }
+    .sidebar .logo {
+        padding: 0.5rem 0 1rem;
+    }
 }
 
 
@@ -209,9 +280,7 @@ footer {
     .f-item-sx, .f-item-dx {
         width: 20%;
     }
-    .sidebar {
-        padding: 1rem 1rem 0.2rem;
-    }
+    
 }
 
 /*desktop grande*/
