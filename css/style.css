@@ -14,6 +14,7 @@ html {
 .flex-between { justify-content: space-between; }
 .flex-wrap { flex-wrap: wrap; }
 .flex-center { justify-content: center; }
+.flex-item-center { align-items: center; }
 
 /*root*/
 :root {
@@ -26,6 +27,7 @@ html {
 
 /*text*/
 .t-center { text-align: center; }
+.t-right { text-align: right; }
 .t-dec-none { text-decoration: none; }
 .list-none { list-style: none; }
 .t-white { color: var(--textWhite); }
@@ -47,7 +49,9 @@ html {
     background-color: red;
     border: 1px solid white;
 }
-
+.debug footer div {
+    background-color: brown;
+}
 
 
 
@@ -80,6 +84,13 @@ aside {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+.cta span {
+    line-height: 70px;
+    margin-right: 2rem;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
 .main-nav {
     width: 100%;
 }
@@ -87,7 +98,7 @@ aside {
     padding: 20px;
 }
 
- /*recently*/
+ /*sections*/
 
 section {
     margin: 3rem 0;
@@ -100,9 +111,20 @@ section ul li {
     width: calc(100% / 2);
     min-height: 200px;
 }
+
+
+/*footer*/
 footer {
     height: 100px;
     background-color: var(--footerColor);
+}
+.f-item-sx, .f-item-dx {
+    width: 25%;
+    height: 80px;
+}
+.f-item-center {
+    width: 40%;
+    height: 100%;
 }
 
 
@@ -146,6 +168,9 @@ footer {
     }
     section ul li {
         width: calc(100% / 4);
+    }
+    .f-item-sx, .f-item-dx {
+        width: 20%;
     }
 }
 
