@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-family: 'Poppins', sans-serif;
+}
 
 /*UTILITY*/
 
@@ -11,6 +13,7 @@
 .d-flex { display: flex; }
 .flex-between { justify-content: space-between; }
 .flex-wrap { flex-wrap: wrap; }
+.flex-center { justify-content: center; }
 
 /*root*/
 :root {
@@ -21,18 +24,36 @@
     --textWhite: #fbfbfb;
 }
 
+/*text*/
+.t-center { text-align: center; }
+.t-dec-none { text-decoration: none; }
+.list-none { list-style: none; }
+.t-white { color: var(--textWhite); }
+.t-gray { color: var(--textGray); }
+
+
+
+
+
+/*DEBUG*/
+.debug .main-nav {
+    border: 1px solid white;
+}
+.debug .card {
+    background-color: orange;
+    height: 100%;
+}
+.debug #recently ul li {
+    background-color: red;
+    border: 1px solid white;
+}
 
 
 
 
 
 
-
-
-
-
-
-
+/*CSS*/
 main {
     height: calc(100vh - 100px);
     background-color: var(--mainColor);
@@ -43,8 +64,34 @@ aside {
 }
 .main-content {
     width: calc(100% - 50px);
+    padding: 5rem 0.5rem ;
+}
+.cta {
+    height: 70px;
+    width: calc(100vw - 50px);
+    position: fixed;
+    top: 0;
+    left: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.main-nav {
+    width: 100%;
+}
+.main-nav li {
+    padding: 20px;
 }
 
+ /*recently*/
+
+#recently ul {
+    width: 100%;
+}
+#recently ul li {
+    padding: 0.5rem;
+    width: calc(100% / 2);
+    min-height: 200px;
+}
 footer {
     height: 100px;
     background-color: var(--footerColor);
@@ -70,6 +117,10 @@ footer {
     .main-content {
         width: calc(100% - 200px);
     }
+    .cta {
+        width: calc(100% - 200px);
+        left: 200px;
+    }
 }
 
 
@@ -82,6 +133,19 @@ footer {
     .main-content {
         width: calc(100% - 300px);
     }
+    .cta {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    #recently ul li {
+        width: calc(100% / 4);
+    }
 }
 
 /*desktop grande*/
+
+@media screen and (min-width: 992px) {
+    #recently ul li {
+        width: calc(100% / 6);
+    }
+}
