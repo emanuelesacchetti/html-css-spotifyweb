@@ -15,6 +15,7 @@ html {
 .flex-wrap { flex-wrap: wrap; }
 .flex-center { justify-content: center; }
 .flex-item-center { align-items: center; }
+.flex-column { flex-direction: column; }
 
 /*root*/
 :root {
@@ -36,25 +37,12 @@ html {
 
 
 
-/*DEBUG*/
-.debug .main-nav {
-    border: 1px solid white;
-}
-.debug .card {
-    background-color: orange;
-    height: 100%;
-}
-.debug section ul li {
-    background-color: red;
-    border: 1px solid white;
-}
+/*DEBUG
+
 .debug footer div {
     background-color: brown;
-}
+}*/
 
-.debug .sidebar-playlist {
-    background-color: orange;
-}
 
 
 
@@ -65,6 +53,7 @@ html {
 main {
     height: calc(100vh - 100px);
     background-color: var(--mainColor);
+    overflow-y: hidden;
 } 
 aside {
     width: 50px;
@@ -91,8 +80,8 @@ aside {
     line-height: 70px;
     margin-right: 2rem;
     border: 1px solid white;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 10px 21px;
+    border-radius: 25px;
 }
 .main-nav {
     width: 100%;
@@ -112,19 +101,29 @@ section ul {
 section ul li {
     padding: 0.5rem;
     width: calc(100% / 2);
-    min-height: 200px;
+}
+.card img {
+    width: 100%;
+}
+.card h3 {
+    font-size: 15px;
+    margin-top: 10px;
+}
+#best-artist .card img {
+    border-radius: 50%;
 }
 
 
 
 /*sidebar*/
+
+/*sidebar-top*/
 .sidebar {
     padding: 0.2rem;
-    min-height: 410px;
+    min-height: 600px;
 }
 .sidebar-top {
     width: 100%;
-    flex-direction: column;
     height: calc(100% - 150px);
     min-height: 260px;
 }
@@ -173,12 +172,55 @@ section ul li {
     line-height: 20px;
     vertical-align: middle;
 }
+
+/*playlist*/
+
+.list-playlist {
+    list-style: none;
+    padding: 5px;
+    overflow-y: scroll;
+}
+.list-playlist::-webkit-scrollbar {
+    display: none;
+}
+.sidebar-playlist h3 {
+    padding: 5px;
+}
+.sidebar-playlist {
+    flex-direction: column;
+}
+.plus {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #a09c8d;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.plus-text {
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+.list-playlist li {
+    padding: 8px 0;
+}
+
+
+
+
+/*sidebar-bottom*/
+.sidebar-bottom {
+    justify-content: flex-end;
+}
 .download {
     height: 50px;
     padding: 20px 5px 5px;
 }
 .download .text {
-    line-height: 40px;
+    line-height: 25px;
     vertical-align: middle;
     padding-left: 10px;
 }
@@ -208,6 +250,7 @@ section ul li {
 }
 .sidebar hr {
     margin: 10px 0;
+    display: none;
 }
 
 
@@ -221,11 +264,63 @@ footer {
 .f-item-sx, .f-item-dx {
     width: 25%;
     height: 80px;
+    margin: 0 0.5rem;
 }
 .f-item-center {
     width: 40%;
     height: 100%;
 }
+/*item-sx*/
+.f-item-sx img {
+    width: 30px;
+    margin: 0 5px;
+}
+.info-song {
+    line-height: 1rem;
+    margin: 0 5px;
+}
+.icon-song {
+    margin: 0 5px;
+}
+/*item.center*/
+
+
+
+/*item-dx*/
+.f-item-dx {
+    justify-content: flex-end;
+}
+.line-small-bottom {
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--textGray);
+    position: relative;
+}
+.line-small-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--textWhite);
+}
+.line-samll-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(198, 192, 192);
+}
+.f-item-dx i {
+    margin: 0 5px;
+}
+
+
+
 
 
 
@@ -241,7 +336,7 @@ footer {
 
 @media screen and (min-width: 578px) {
     aside {
-        width: 200px;
+        width: 300px;
     }
     .main-content {
         width: calc(100% - 200px);
@@ -251,7 +346,7 @@ footer {
         left: 200px;
     }
     .sidebar-playlist {
-        display: inline-block;
+        display: flex;
     }
     .sidebar .text {
         display: inline-block;
@@ -277,15 +372,31 @@ footer {
     .sidebar .logo {
         padding: 0.5rem 0 1rem;
     }
+    .sidebar hr {
+        display: inline-block;
+    }
+    .f-item-sx img {
+        width: 50px;
+        margin: 0 20px;
+    }
+    .f-item-sx img {
+        width: 50px;
+        margin: 0px 3px;
+    }
+    .info-song {
+        line-height: 1rem;
+        margin: 0 5px;
+    }
+    .icon-song {
+        margin: 0 3px;
+    }
 }
 
 
 /*desktop*/
 
 @media screen and (min-width: 768px) {
-    aside {
-        width: 300px;
-    }
+    
     .main-content {
         width: calc(100% - 300px);
     }
@@ -297,9 +408,16 @@ footer {
         width: calc(100% / 4);
     }
     .f-item-sx, .f-item-dx {
-        width: 20%;
+        width: 25%;
+        margin: 0 15px;
     }
-    
+    .info-song {
+        line-height: 1rem;
+        margin: 0px 13px;
+    }
+    .icon-song i {
+        margin: 0 5px;
+    }
 }
 
 /*desktop grande*/
@@ -308,11 +426,8 @@ footer {
     section ul li {
         width: calc(100% / 6);
     }
-}
-
-
-@media screen and (max-height: 578px) {
-    .sidebar-playlist {
-        display: none;
+    .f-item-sx, .f-item-dx {
+        margin: 0 25px;
     }
 }
+

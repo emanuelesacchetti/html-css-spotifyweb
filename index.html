@@ -15,7 +15,7 @@
     <main class="d-flex">
         
         <aside class="sidebar">
-            <div class="sidebar-top d-flex">
+            <div class="sidebar-top d-flex flex-column">
                 <div class="sidebar-icons">
                     <div class="logo t-center">
                         <span class="icon-logo">
@@ -44,20 +44,26 @@
                         <span class="text t-gray">libreria</span>
                     </div>
                 </div>
-                <div class="sidebar-playlist">
-                    <div>Playlist</div>
-                    <div>crea playlist</div>
-                    <div class="new-playlist">
-                        <div>nuova playlist</div>
-                        <div>nuova playlist</div>
-                        <div>nuova playlist</div>
-                        <div>nuova playlist</div>
-                        <div>nuova playlist</div>
-                        <div>nuova playlist</div>
-                    </div>
+                <div class="sidebar-playlist d-flex flex-column">
+                    <h3 class="t-white">PLAYLIST</h3>
+                    <a class="row" ><span class="plus">+</span><span class="t-white plus-text"> Crea Playlist</span></a>
+                    <ul class="list-playlist d-flex flex-column">
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                    </ul>
                 </div>
             </div>
-            <div class="sidebar-bottom">
+            <div class="sidebar-bottom d-flex flex-column">
                 <div class="download">
                     <span class="icon">
                         <img id="download" src="img/download.svg" alt="">
@@ -76,17 +82,17 @@
         <div class="main-content">
 
             <div class="cta t-right">                            <!--CALL TO ACTION-->
-               <span class="t-white">ciao</span>
+               <span class="t-white">EFFETTUA L'UPGRADE</span>
             </div>
 
             <nav class="main-nav">
                 <ul class="d-flex flex-center flex-wrap list-none t-gray">
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li>IN EVIDENZA</li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
                 </ul>
             </nav>
 
@@ -95,86 +101,86 @@
                 <ul class="d-flex flex-wrap list-none">
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/metal_lifting.jpg" alt="metal">
+                            <h3 class="t-center t-white">Heavy metal</h3>
+                            <h4 class="t-center t-gray">subtitle</h4>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/stranger.jpeg" alt="stranger things ost">
+                            <h3 class="t-center t-white">Stranger Things, Vol.
+                                1 (a Netflix Original
+                                Series Soundtrack)
+                            </h3>
+                            <h4 class="t-center t-gray">Kyle Dixon & Michael Stein</h4>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/aquietplace.jpeg" alt="a quiet place">
+                            <h3 class="t-center t-white">A Quite Place</h3>
+                            <h4 class="t-center t-gray">subtitle</h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="card">
+                            <img src="img/split.jpeg" alt="split">
+                            <h3 class="t-center t-white">Slit</h3>
+                            <h4 class="t-center t-gray">subtitle</h4>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/cure.jpeg" alt="a cure of wellness">
+                            <h3 class="t-center t-white">A cure for wellness</h3>
+                            <h4 class="t-center t-gray">subtitle</h4>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/sinister.jpeg" alt="sinister">
+                            <h3 class="t-center t-white">Sinister</h3>
+                            <h4 class="t-center t-gray">subtitle</h4>
                         </div>
                     </li>
                 </ul>
             </section>
 
             <section id="create">                     <!--CREATE-->
-                <h2 class="t-white">TITLE</h2>
-                <h3 class="t-gray">SUBTITLE</h3>
+                <h2 class="t-white">Creato per John Doe</h2>
+                <h3 class="t-gray">Più ascolti, più accurati saranno i tuoi suggerimenti</h3>
                 <ul class="d-flex flex-wrap list-none">
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/radar.jpeg" alt="radar playlist">
+                            <h3 class="t-center t-white">Release Radar</h3>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/mixdaily.jpeg" alt="mix daily">
+                            <h3 class="t-center t-white">Daily mix 1</h3>
                         </div>
                     </li>
                 </ul>
             </section>
 
             <section id="best-artist">                     <!--BEST-ARTIST-->
-                <h2 class="t-white">TITLE</h2>
-                <h3 class="t-gray">SUBTITLE</h3>
+                <h2 class="t-white">Artisti più popolari</h2>
+                <h3 class="t-gray">Più ascolti, più accurati saranno i tuoi suggerimenti</h3>
                 <ul class="d-flex flex-wrap list-none">
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/youg.jpeg" alt="il grande gatsby">
+                            <h3 class="t-center t-white">Lana del Rey</h3>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <div>IMAGE</div>
-                            <h3>TITLE</h3>
-                            <h4>SUBTITLE</h4>
+                            <img src="img/einaudi.jpeg" alt="einaudi">
+                            <h3 class="t-center t-white">Ludovico einaudi</h3>
                         </div>
                     </li>
                 </ul>
@@ -183,26 +189,32 @@
     </main>
 
     <footer class="d-flex flex-between flex-item-center">
-        <div class="f-item-sx d-flex">
-            <div>image</div>
-            <div>info</div>
-            <div>
-                <i>icon</i>
-                <i>icon</i>
+        <div class="f-item-sx d-flex flex-item-center flex-between">
+            <div class="d-flex flex-item-center">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="info-song">
+                    <div class="t-white">Sinister</div>
+                    <span class="t-gray">brano</span>
+                    <span class="t-gray">Nome</span>
+                </div>
+            </div>
+            <div class="icon-song">
+                <i class="t-gray fa-regular fa-heart"></i>
+                <i class="t-gray fa-regular fa-folder"></i>
             </div>
         </div>
         <div class="f-item-center t-center">
             <div>bottoni</div>
             <div>barra</div>
         </div>
-        <div class="f-item-dx d-flex">
-            <div>
-                <span><i>icon</i></span>
-                <span><i>icon</i></span>
-            </div>
-            <div>
-                <span><i>icon</i></span>
-                <span><i>volume icon</i></span>
+        <div class="f-item-dx d-flex flex-item-center">
+            <i class="t-white fa-solid fa-list"></i>
+            <i class="t-white fa-solid fa-desktop"></i>
+            <i class="t-white fa-solid fa-volume-low"></i>
+            <div class="line-small-bottom">
+                <div class="line-small-top">
+                    <div class="line-small-circle"></div>
+                </div>
             </div>
         </div>
     </footer>
