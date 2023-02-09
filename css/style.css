@@ -112,6 +112,41 @@ section ul li {
 }
 #best-artist .card img {
     border-radius: 50%;
+    display: block;
+}
+.wrapped {
+    position: relative;
+}
+.wrapped div i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    display: none;
+}
+.layover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.layover-circle {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    display: none;
 }
 
 
@@ -345,6 +380,7 @@ footer {
     height: 15px;
     border-radius: 50%;
     background-color: rgb(198, 192, 192);
+    display: none;
 }
 
 .f-item-dx i {
@@ -365,6 +401,15 @@ footer {
     background-color: rgb(0, 245, 0);
 }
 
+.card:hover .wrapped div i {
+    display: inline-block;
+}
+.card:hover .layover {
+    display: inline-block;
+}
+.card:hover .layover-circle {
+    display: inline-block;
+}
 
 
 
