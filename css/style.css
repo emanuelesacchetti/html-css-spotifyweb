@@ -306,6 +306,7 @@ footer {
     height: 20px;
     border-radius: 50%;
     background-color: rgb(198, 192, 192);
+    display: none;
 }
 .line-big {
     width: 400px;
@@ -351,8 +352,18 @@ footer {
 }
 
 
-
-
+/*HOVER*/
+.line-bottom:hover .big-circle {
+    display: block;
+    background-color: rgb(0, 245, 0);
+}
+.line-bottom:hover .small-circle {
+    display: block;
+    background-color: rgb(0, 245, 0);
+}
+.line-bottom:hover .line-top {
+    background-color: rgb(0, 245, 0);
+}
 
 
 
