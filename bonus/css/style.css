@@ -78,9 +78,11 @@ aside {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
     justify-content: flex-end;
+    transition: height 2s linear 0.2s;
 }
 .cta span {
     display: inline-block;
+    transition: all 1s linear;
 }
 .cta span a {
     text-decoration: none;
@@ -89,6 +91,7 @@ aside {
     border: 1px solid white;
     padding: 7px 21px;
     border-radius: 25px;
+    transition: all 1s linear;
 }
 .main-nav {
     width: 100%;
@@ -98,6 +101,9 @@ aside {
 }
 .main-nav li {
     padding: 5px;
+}
+.main-nav li a {
+    font-size: 13px;
 }
 .border-b-hover {
     width: 30%;
@@ -117,14 +123,20 @@ section {
 }
 section ul {
     width: 100%;
+    overflow-x: scroll;
+}
+section ul::-webkit-scrollbar {
+    display: none;
 }
 section ul li {
     padding: 0.5rem;
-    width: calc(100% / 2);
 }
 .card img {
     width: 100%;
     display: block;
+}
+.card {
+    width: 200px;
 }
 .card h3 {
     font-size: 15px;
@@ -483,15 +495,21 @@ footer .f-item-center-top i:hover {
     }
 }
 
+
 /*MEDIA QUERY*/
 
 @media screen and (max-height: 500px) {
     .cta {
-        display: none;
+        height: 0;
+    }
+    .cta span a {
+        color: transparent;
+        border: 0px solid transparent;
     }
     .main-content {
         padding: 1rem 0.5rem;
     }
+
 }
 
 
@@ -594,9 +612,6 @@ footer .f-item-center-top i:hover {
         width: calc(100% - 300px);
         left: 300px;
     }
-    section ul li {
-        width: calc(100% / 4);
-    }
     .f-item-sx, .f-item-dx {
         width: 25%;
         margin: 0 15px;
@@ -608,16 +623,27 @@ footer .f-item-center-top i:hover {
     .icon-song i {
         margin: 0 5px;
     }
+    .card {
+        width: 200px;
+    }
+   
 }
 
 /*desktop grande*/
 
-@media screen and (min-width: 992px) {
-    section ul li {
-        width: calc(100% / 6);
-    }
+@media screen and (min-width: 992px){
+    
     .f-item-sx, .f-item-dx {
         margin: 0 25px;
+    }
+    .card {
+        width: 200px;
+    }
+    section ul li {
+        margin-right: 15px;
+    }
+    .main-nav li a {
+        font-size: 16px;
     }
 }
 
