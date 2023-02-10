@@ -6,6 +6,7 @@
 html {
     font-family: 'Poppins', sans-serif;
 }
+a { text-decoration: none; }
 
 /*UTILITY*/
 
@@ -24,6 +25,7 @@ html {
     --asideColor: black;
     --textGray: #64676d;
     --textWhite: #fbfbfb;
+    --greenBar: #bdff30;
 }
 
 /*text*/
@@ -75,19 +77,37 @@ aside {
     left: 50px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
+    justify-content: flex-end;
 }
 .cta span {
-    line-height: 70px;
+    display: inline-block;
+}
+.cta span a {
+    text-decoration: none;
+    display: inline-block;
     margin-right: 2rem;
     border: 1px solid white;
-    padding: 10px 21px;
+    padding: 7px 21px;
     border-radius: 25px;
 }
 .main-nav {
     width: 100%;
 }
+.main-nav ul {
+    gap: 10px;
+}
 .main-nav li {
-    padding: 20px;
+    padding: 5px;
+}
+.border-b-hover {
+    width: 30%;
+    height: 1px;
+    background-color: transparent;
+    position: relative;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    display: inline-block;
 }
 
  /*sections*/
@@ -104,6 +124,7 @@ section ul li {
 }
 .card img {
     width: 100%;
+    display: block;
 }
 .card h3 {
     font-size: 15px;
@@ -112,10 +133,10 @@ section ul li {
 }
 #best-artist .card img {
     border-radius: 50%;
-    display: block;
 }
 .wrapped {
     position: relative;
+    display: inline-block;
 }
 .wrapped div i {
     position: absolute;
@@ -196,6 +217,9 @@ section ul li {
 .row {
     height: 50px;
     padding: 5px;
+}
+.t-center.row {
+    border-left: 1px solid transparent;
 }
 .row .text {
     line-height: 40px;
@@ -315,6 +339,15 @@ footer {
     line-height: 1rem;
     margin: 0 5px;
 }
+.info-song div {
+    font-size: 13px;
+}
+.info-song a {
+    font-size: 10px;
+}
+.icon-song i {
+    font-size: 10px;
+}
 .icon-song {
     margin: 0 5px;
 }
@@ -324,21 +357,22 @@ footer {
     margin-top: 5px;
 }
 .f-item-center-top i {
-    margin: 0 15px;
-    font-size: 20px;
+    margin: 0 6px;
+    font-size: 15px;
 }
 .f-item-center-top .play {
     font-size: 35px;
 }
 .time {
     margin: 0 10px;
+    font-size: 10px;
 }
 .big-circle {
     position: absolute;
-    top: -7px;
-    left: 88%;
-    width: 20px;
-    height: 20px;
+    top: -3px;
+    left: 95%;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: rgb(198, 192, 192);
     display: none;
@@ -371,13 +405,14 @@ footer {
     height: 5px;
     border-radius: 5px;
     background-color: var(--textWhite);
+    
 }
 .small-circle {
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: 80%;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: rgb(198, 192, 192);
     display: none;
@@ -391,14 +426,14 @@ footer {
 /*HOVER*/
 .line-bottom:hover .big-circle {
     display: block;
-    background-color: rgb(0, 245, 0);
+    background-color: green;
 }
 .line-bottom:hover .small-circle {
     display: block;
-    background-color: rgb(0, 245, 0);
+    background-color: green;
 }
 .line-bottom:hover .line-top {
-    background-color: rgb(0, 245, 0);
+    background-color: green;
 }
 
 .card:hover .wrapped div i {
@@ -410,12 +445,28 @@ footer {
 .card:hover .layover-circle {
     display: inline-block;
 }
-
-
-
-
-
-
+.main-content .cta a:hover {
+    transform: scale(1.1);
+}
+.sidebar .text .t-gray:hover {
+    color: var(--textWhite);
+}
+footer .f-item-center-top i:hover {
+    transform: scale(1.2);
+    display: inline-block;
+}
+.main-nav a:hover {
+    color: var(--textWhite);
+}
+.main-nav li:hover .border-b-hover{
+    background-color: var(--greenBar);
+}
+.sidebar-icons .row:hover {
+    border-left: 1px solid  var(--greenBar);
+}
+.f-item-sx .t-gray:hover {
+    color: var(--textWhite);
+}
 
 /*MEDIA QUERY*/
 
@@ -476,6 +527,32 @@ footer {
     }
     .icon-song {
         margin: 0 3px;
+    }
+    .f-item-center-top i {
+        margin: 0 15px;
+    }
+    .small-circle {
+        width: 15px;
+        height: 15px;
+        top: -5px;
+    }
+    .big-circle {
+        top: -7px;
+        width: 20px;
+        height: 20px;
+    }
+    .info-song div {
+        font-size: 16px;
+    }
+    .info-song a {
+        font-size: 13px;
+    }
+    .icon-song i {
+        font-size: 16px;
+    }
+    .f-item-center-top i {
+        margin: 0 13px;
+        font-size: 20px;
     }
 }
 
