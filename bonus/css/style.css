@@ -65,6 +65,7 @@ aside {
     width: calc(100% - 50px);
     padding: 5rem 0.5rem ;
     overflow-y: scroll;
+    transition: padding 3s ease-out;
 }
 .main-content::-webkit-scrollbar {
     display: none;
@@ -515,6 +516,9 @@ footer .f-item-center-top i:hover {
     .cta span a {
         color: transparent;
         border: 0px solid transparent;
+    }
+    .main-content {
+        padding: 1rem 0.5rem;
     }
     .main-content {
         padding: 1rem 0.5rem;
