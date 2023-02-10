@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>spotify web</title>
+</head>
+
+<body class="debug">
+    <main class="d-flex">
+        
+        <aside class="sidebar">
+            <div class="sidebar-top d-flex flex-column">
+                <div class="sidebar-icons">
+                    <div class="logo t-center">
+                        <span class="icon-logo">
+                            <img src="img/logo-small.svg" alt="logo piccolo">
+                        </span>
+                        <span class="icon-logo-2">
+                            <img id="logo" src="img/logo.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="t-center row">
+                        <span class="icon">
+                            <img id="home" src="img/home.svg" alt="">
+                        </span>
+                        <span class="text"><a class="t-gray" href="#">Home</a></span>
+                    </div>
+                    <div class="t-center row">
+                        <span class="icon">
+                            <img id="search" src="img/search.svg" alt="">
+                        </span>
+                        <span class="text"><a class="t-gray" href="#">Cerca</a></span>
+                    </div>
+                    <div class="t-center row">
+                        <span class="icon">
+                            <img id="libreria" src="img/libreria.svg" alt="">
+                        </span>
+                        <span class="text"><a class="t-gray" href="#">Libreria</a></span>
+                    </div>
+                </div>
+                <div class="sidebar-playlist d-flex flex-column">
+                    <h3 class="t-white">PLAYLIST</h3>
+                    <a class="row" ><span class="plus"><i class="fa-solid fa-plus"></i></span><span class="t-white plus-text">Crea Playlist</span></a>
+                    <ul class="list-playlist d-flex flex-column">
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                        <li class="t-white">Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-bottom d-flex flex-column">
+                <div class="download">
+                    <span class="icon">
+                        <img id="download" src="img/download.svg" alt="">
+                    </span>
+                    <span class="text"><a class="t-gray" href="#">Installa App</a></span>
+                </div>
+                <hr>
+                <div class="profile">
+                    <span class="icon">
+                        <img id="profile" src="img/profile.svg" alt="">
+                    </span>
+                    <span class="text"><a class="t-white" href="#">John Doe</a></span>
+                </div>
+            </div>
+        </aside>
+        <div class="main-content">
+
+            <div class="cta d-flex flex-item-center">                            <!--CALL TO ACTION-->
+               <span><a class="t-white"href="#">EFFETTUA L'UPGRADE</a></span>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="d-flex flex-center flex-wrap list-none t-gray">
+                    <li>
+                        <a href="#" class="t-gray">IN EVIDENZA</a>
+                        <div class="border-b-hover"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="t-gray">PODCAST</a>
+                        <div class="border-b-hover"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="t-gray">CLASSIFICHE</a>
+                        <div class="border-b-hover"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="t-gray">GENERI & MOOD</a>
+                        <div class="border-b-hover"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="t-gray">NUOVE USCITE</a>
+                        <div class="border-b-hover"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="t-gray">SCOPRI</a>
+                        <div class="border-b-hover"></div>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="recently">                     <!--RECENTLY-->
+                <h2 class="t-white">Recently Played</h2>
+                <ul class="d-flex flex-wrap list-none">
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/metal_lifting.jpg" alt="metal">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            
+                            <h3 class="t-center"><a class="t-white" href="#">Heavy Metal</a></h3>
+                            <h4 class="t-center"><a class="t-gray" href="#">subtitle</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/stranger.jpeg" alt="stranger things ost">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>    
+                            <h3 class="t-center"><a class="t-white" href="#">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</a></h3>
+                            <h4 class="t-center"><a class="t-gray" href="#">Kyle Dixon & Michael Stein</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/aquietplace.jpeg" alt="a quiet place">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">A Quite Place</a></h3>
+                            <h4 class="t-center"><a class="t-gray" href="#">subtitle</a></h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/split.jpeg" alt="split">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">Slit</a></h3>
+                            <h4 class="t-center"><a class="t-gray" href="#">subtitle</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/cure.jpeg" alt="a cure of wellness">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">A cure for wellness</a></h3>
+                            <h4 class="t-center"><a class="t-gray" href="#">subtitle</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/sinister.jpeg" alt="sinister">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">Sinister</a></h3>
+                            <h4 class="t-center"><a class="t-gray" href="#">subtitle</a></h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="create">                     <!--CREATE-->
+                <h2 class="t-white">Creato per John Doe</h2>
+                <h3 class="t-gray">Più ascolti, più accurati saranno i tuoi suggerimenti</h3>
+                <ul class="d-flex flex-wrap list-none">
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/radar.jpeg" alt="radar playlist">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">Release Radar</a></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/mixdaily.jpeg" alt="mix daily">
+                                <div class="layover"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">Daily mix 1</a></h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="best-artist">                     <!--BEST-ARTIST-->
+                <h2 class="t-white">Artisti più popolari</h2>
+                <h3 class="t-gray">Più ascolti, più accurati saranno i tuoi suggerimenti</h3>
+                <ul class="d-flex flex-wrap list-none">
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/youg.jpeg" alt="il grande gatsby">
+                                <div class="layover-circle"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">Lana Del Rey</a></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="wrapped">
+                                <img src="img/einaudi.jpeg" alt="einaudi">
+                                <div class="layover-circle"></div>
+                                <div><a href="#"><i class="t-white play fa-solid fa-circle-play"></i></a></div>
+                            </div>
+                            <h3 class="t-center"><a class="t-white" href="#">Ludovico einaudi</a></h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="d-flex flex-between flex-item-center">
+        <div class="f-item-sx d-flex flex-item-center">
+            <div class="d-flex flex-item-center">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="info-song">
+                    <div class="t-white">Sinister</div>
+                    <span><a class="t-gray" href="#">brano</a></span>
+                    <span><a class="t-gray" href="#">Nome</a></span>
+                </div>
+            </div>
+            <div class="icon-song">
+                <a href="#"><i class="t-gray fa-regular fa-heart"></i></a>
+                <a href="#"><i class="t-gray fa-regular fa-folder"></i></a>            </div>
+        </div>
+        <div class="f-item-center t-center">
+            <div class="f-item-center-top d-flex flex-item-center flex-center">
+                <a href="#"><i class="t-white fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="t-white fa-solid fa-backward-step"></i></a> 
+                <a href="#"><i class="t-white fa-solid fa-circle-play"></i></a>               
+                <a href="#"><i class="t-white fa-solid fa-forward-step"></i></a> 
+                <a href="#"><i class="t-white fa-solid fa-rotate-right"></i></a>               
+            </div>
+            <div class="f-item-center-bottom d-flex flex-item-center flex-center">
+                <div class="time t-white">0:25</div>
+                <div class="line-bottom line-big">
+                    <div class="line-top">
+                        <div class="big-circle"></div>
+                    </div>
+                </div>
+                <div class="time t-white">4:35</div>
+            </div>
+        </div>
+        <div class="f-item-dx d-flex flex-item-center">
+            <a href="#"><i class="t-white fa-solid fa-list"></i></a>
+            <a href="#"><i class="t-white fa-solid fa-desktop"></i></a>
+            <a href="#"><i class="t-white fa-solid fa-volume-low"></i></a>
+            <div class="line-bottom line-small">
+                <div class="line-top">
+                    <div class="small-circle"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
