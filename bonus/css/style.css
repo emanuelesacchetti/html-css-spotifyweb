@@ -216,12 +216,18 @@ section ul li {
 }
 .sidebar .icon-logo-2 {
     display: none;
+
 }
 .sidebar-icons img {
     width: 80%;
 }
 .sidebar .icon {
     height: 10px;
+}
+.icon-logo img {
+    background-color: transparent;
+    border-radius: 0;
+    transition: all 0.5s;
 }
 .sidebar-bottom .icon {
     height: 100%;
@@ -493,6 +499,10 @@ footer .f-item-center-top i:hover {
     100% {
         transform: rotate(360deg);
     }
+}
+.icon-logo img:hover {
+    background-color: #1dd760;
+    border-radius: 50%;
 }
 
 
